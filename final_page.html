@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="navbar">
+    <h4>TWITTER</h4>
+    <div class="options">
+        <a href="">Tweets</a>
+        <a id="option_name"></a>
+        <a href="login_page.html">Logout</a>
+    </div>
+</div>
+<div class="registration">
+<h1 id="welcome_user"></h1>
+
+    <p>EMAIL:</p>
+    <h4 id="wel_email"></h4>
+
+    <p>PASSWORD:</p>
+    <h4 id="wel_password"></h4>
+
+    <p>FULL NAME:</p>
+    <h4 id="wel_full_name"></h4>
+
+    <p>COUNTRY:</p>
+    <h4 id="wel_country"></h4>
+
+    <p>BIRTH DATE:</p>
+    <h4 id="wel_birthday"></h4>
+
+</div>
+<script >
+    let index = localStorage.getItem("index")
+    option_name.innerText = user[index].fName
+    welcome_user.innerText = "Welcome " + user[index].fName
+    wel_email.innerText = user[index].email
+    wel_password.innerText = user[index].password
+    wel_full_name.innerText = user[index].fName
+    wel_country.innerText = user[index].country
+    wel_birthday.innerText = user[index].bDate
+</script>
+</body>
+</html>

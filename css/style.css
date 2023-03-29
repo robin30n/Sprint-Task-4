@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: skyblue;
+}
+
+.navbar h4,a{
+    color: white;
+}
+
+.navbar h4, .options a {
+    margin: 20px 10px;
+}
+
+.registration {
+    text-align: center;
+}
